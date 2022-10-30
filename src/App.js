@@ -1,15 +1,17 @@
-import { useState } from 'react';
+import { Stack} from '@chakra-ui/react';
 import './App.css';
+import Navbar from './Pages/Navbar';
+import TypeWriters from './Pages/TypeWriter';
+
 
 function App() {
-  const [count, setcount] = useState(0)
   return (
-    <div className="App">
-     <h1>Count:- {count}</h1>
+    <Stack className="App">
      
-     <button onClick={ ()=> setcount(count+1)}>Count</button>
+     <Navbar/>
+    {/* <TypeWriters/> */}
      
-    </div>
+    </Stack>
   );
 }
 
