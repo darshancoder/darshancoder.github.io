@@ -1,16 +1,21 @@
 import { Stack} from '@chakra-ui/react';
 import './App.css';
+// import AboutME from './Pages/AboutME';
 import Navbar from './Pages/Navbar';
 
 
 function App() {
   return (
-    <Stack className="App">
+    <>
+      <Stack className="App">
      
      <Navbar/>
+     {/* <AboutME/> */}
     
      
     </Stack>
+  
+    </>
   );
 }
 
