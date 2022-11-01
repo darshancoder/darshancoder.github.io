@@ -1,4 +1,5 @@
 import React from "react";
+import TypeWriterPage from './TypeWriterPage';
 import {
   Box,
   Spacer,
@@ -16,7 +17,11 @@ import {
   AddIcon,
   ExternalLinkIcon,
 } from "@chakra-ui/icons";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu,AiOutlineFundProjectionScreen } from "react-icons/ai";
+import {HiOutlineHome} from "react-icons/hi"
+import {SlBookOpen}from "react-icons/sl"
+import {RiSlideshowFill} from "react-icons/ri"
+import {IoIosContact} from "react-icons/io"
 
 const Navbar = () => {
   return (
@@ -28,7 +33,7 @@ const Navbar = () => {
       <Flex>
         {" "}
         <Flex justifyContent="left">
-          <Box ml="30px">
+          <Box ml="100px">
             <Text
               fontFamily="BesterMindRegular"
               as="i"
@@ -37,7 +42,7 @@ const Navbar = () => {
               ml="5px"
               fontSize="25px"
             >
-              Darshan Kale
+              Darshan <span style={{color:"red"}}>Kale</span>
             </Text>
           </Box>
         </Flex>
@@ -52,17 +57,23 @@ const Navbar = () => {
                 variant="outline"
               />
               <MenuList>
-                <MenuItem icon={<AddIcon />}>New Tab</MenuItem>
-                <MenuItem icon={<ExternalLinkIcon />}>New Window</MenuItem>
-                <MenuItem icon={<RepeatIcon />}>Open Closed Tab</MenuItem>
-                <MenuItem icon={<EditIcon />}>Open File...</MenuItem>
+                <MenuItem icon={<HiOutlineHome />}>Home</MenuItem>
+                <MenuItem icon={<ExternalLinkIcon />}>About</MenuItem>
+                <MenuItem icon={<AiOutlineFundProjectionScreen />}>Projects</MenuItem>
+                <MenuItem icon={<RiSlideshowFill />}>Skills</MenuItem>
+                <MenuItem icon={<SlBookOpen/>}>Education</MenuItem>
+                <MenuItem icon={<IoIosContact />}>Contact</MenuItem>
+
+
               </MenuList>
             </Menu>
           </Box>
         </Flex>
-        <Box></Box>
+        
       </Flex>
-    
+      <Box>
+          <TypeWriterPage/>
+        </Box>
     </Box>
   );
 };
