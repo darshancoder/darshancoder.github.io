@@ -19,6 +19,7 @@ import { SlBookOpen } from "react-icons/sl";
 import { RiSlideshowFill } from "react-icons/ri";
 import { IoIosContact } from "react-icons/io";
 import AboutME from "./AboutME";
+import Skills from "./Skills";
 
 const Navbar = () => {
   return (
@@ -74,6 +75,7 @@ const Navbar = () => {
 
     </Box>
     <AboutME/>
+    <Skills/>
 
    </>
   );
