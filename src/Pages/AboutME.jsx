@@ -7,6 +7,7 @@ import {
   Stack,
   Spacer,
   Button,
+  Link,
 } from "@chakra-ui/react";
 import { Typewriter } from "react-simple-typewriter";
 const AboutME = () => {
@@ -71,8 +72,8 @@ const AboutME = () => {
             interested in obtaining a Developer position <br/>  to create scalable
             products and work on providing a wow-user experience through them.
           </Text>
-          <Button borderRadius="4px" size="sm" w="150px" fontSize="14x"  colorScheme='red'>
-    Download CV
+          <Button borderRadius="4px" p="3" size="sm" w="150px" fontSize="14x"  colorScheme='red'>
+    <Link href="../Download/CV.pdf" download>Download CV</Link>
   </Button>
           </Stack>
         </Box>
