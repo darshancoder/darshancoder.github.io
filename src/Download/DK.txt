@@ -1,0 +1,7 @@
+
+My PC@DESKTOP-55C9DGR MINGW64 /g/Portfoilio_Darshan/my-portfolio (master)
+$ npm start --port 8080
+npm WARN config global `--global`, `--local` are deprecated. Use `--location=global` instead.
+
+> my-portfolio@0.1.0 start
+> react-scripts start 8080
