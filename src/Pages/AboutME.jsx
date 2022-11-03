@@ -73,7 +73,7 @@ const AboutME = () => {
             products and work on providing a wow-user experience through them.
           </Text>
           <Button borderRadius="4px" p="3" size="sm" w="150px" fontSize="14x"  colorScheme='red'>
-    <Link href="../Download/CV.pdf" download="CV.pdf">Download CV</Link>
+    <Link href="../Download/DK.txt" download="DK.txt">Download CV</Link>
   </Button>
           </Stack>
                   </Box>
