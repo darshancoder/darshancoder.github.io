@@ -11,6 +11,21 @@ import {
 } from "@chakra-ui/react";
 import { Typewriter } from "react-simple-typewriter";
 const AboutME = () => {
+
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch('../Download/Resume.pdf').then(response => {
+        response.blob().then(blob => {
+            // Creating new object of PDF file
+            const fileURL = window.URL.createObjectURL(blob);
+            // Setting various property values
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = '../Download/Resume.pdf';
+            alink.click();
+        })
+    })
+}
   return (
     <>
       <Box fontFamily="sans-serif" bg="black" style={{ marginTop: "-20px", paddingBottom:"50px"}} >
@@ -72,8 +87,7 @@ const AboutME = () => {
             interested in obtaining a Developer position <br/>  to create scalable
             products and work on providing a wow-user experience through them.
           </Text>
-          <Button borderRadius="4px" p="3" size="sm" w="150px" fontSize="14x"  colorScheme='red'>
-    <Link href="../Download/DK.txt" download="DK.txt">Download CV</Link>
+          <Button onClick={onButtonClick} borderRadius="4px" p="3" size="sm" w="150px" fontSize="14x"  colorScheme='red'>Download CV
   </Button>
           </Stack>
                   </Box>

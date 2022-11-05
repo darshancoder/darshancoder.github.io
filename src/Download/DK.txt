@@ -1,7 +1,7 @@
+ Getting Started with Create React App
 
-My PC@DESKTOP-55C9DGR MINGW64 /g/Portfoilio_Darshan/my-portfolio (master)
-$ npm start --port 8080
-npm WARN config global `--global`, `--local` are deprecated. Use `--location=global` instead.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-> my-portfolio@0.1.0 start
-> react-scripts start 8080
+## Available Scripts
+
+In the project directory, you can run:

@@ -9,8 +9,11 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 
+import Marquee from "react-fast-marquee"
+
 const Skills = () => {
   return (
+    <>
     <Box
       style={{ marginTop: "-10px" }}
       pb="50px"
@@ -99,9 +102,21 @@ const Skills = () => {
               </Box>
             </GridItem>
           </Grid>
+          
         </Box>
       </Flex>
+      
     </Box>
+    <Marquee>
+          <Box boxShadow="dark-lg" p="6" rounded="sm" bg="white">
+          <Image w="50px" src="https://codeguida.com/media/post_title/g3033.png" /> <Text>JavaScript</Text>
+
+              </Box>
+
+          </Marquee>
+    </>
+
+    
   );
 };
 
