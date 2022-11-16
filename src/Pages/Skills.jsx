@@ -17,6 +17,7 @@ const Skills = () => {
     <Box
       style={{ marginTop: "-10px" }}
       pb="50px"
+      fontFamily="sans-serif"
       bgGradient="linear(to-r, #0f2027, #203a43, #2c5364)"
     >
       <Box
@@ -28,12 +29,12 @@ const Skills = () => {
         Skills
       </Box>
       <Flex gap={40}>
-        <Box ml="50px" width="450px" textAlign="left">
+        <Box ml="70px" width="450px" textAlign="left">
           {/*Text */}
-          <Text color="whitesmoke" fontWeight="bold">
+          <Text color="whitesmoke" fontWeight="bold" fontSize="20px"  >
             My creative skills & experiences.
           </Text>
-          <Text fontSize="12px" color="white" fontFamily="sans-serif">
+          <Text fontSize="17px" color="white">
             I am Full-stack developer with a specialization in HTML,CSS,REST
             APIs, Git/Github,JavaScript,React,Redux,TypeScript,MongoDB,NodeJS.
             Self-motivated and curious to learn, with a keen interest in
@@ -46,8 +47,10 @@ const Skills = () => {
             p="3"
             mt="5px"
             size="sm"
-            fontSize="14x"
-            colorScheme="red"
+            fontSize="18x"
+            colorScheme="green"
+            bg="red"
+            color="white"
           >
             Read More
           </Button>

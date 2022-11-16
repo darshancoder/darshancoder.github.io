@@ -1,7 +1,7 @@
 import { Stack} from '@chakra-ui/react';
 import './App.css';
 // import AboutME from './Pages/AboutME';
-import Navbar from './Pages/Navbar';
+import MainNavbar from './Pages/MainNavbar';
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <>
       <Stack className="App">
      
-     <Navbar/>
+     <MainNavbar/>
      {/* <AboutME/> */}
     
      

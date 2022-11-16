@@ -10,8 +10,10 @@ import {
   IconButton,
   Menu,
   Flex,
+  Grid,GridItem
   
 } from "@chakra-ui/react";
+import {Link} from "react-scroll"
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { AiOutlineMenu, AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { HiOutlineHome } from "react-icons/hi";
@@ -20,8 +22,10 @@ import { RiSlideshowFill } from "react-icons/ri";
 import { IoIosContact } from "react-icons/io";
 import AboutME from "./AboutME";
 import Skills from "./Skills";
+import {Links} from "./Links";
 
-const Navbar = () => {
+const MainNavbar = () => {
+
   return (
     <>
     <Box
@@ -39,7 +43,7 @@ const Navbar = () => {
               textAlign="left"
               color="white"
               ml="5px"
-              fontSize="25px"
+              fontSize="30px"
             >
               Darshan <span style={{ color: "red" }}>Kale</span>
             </Text>
@@ -47,7 +51,7 @@ const Navbar = () => {
         </Flex>
         <Spacer />
         <Flex>
-          <Box mr="30px">
+          {/* <Box mr="30px">
             <Menu>
               <MenuButton
                 as={IconButton}
@@ -66,6 +70,19 @@ const Navbar = () => {
                 <MenuItem icon={<IoIosContact />}>Contact</MenuItem>
               </MenuList>
             </Menu>
+          </Box> */}
+          <Box mr="30px" fontFamily="sans-serif" fontSize="20px">
+          <Grid templateColumns='repeat(6, 1fr)' gap={6}>
+  <GridItem >Home</GridItem> 
+  <GridItem w='100%' h='10'>
+  About
+      </GridItem>
+  <GridItem w='100%' h='10'>Projects</GridItem>
+  <GridItem w='100%' h='10'>Skills</GridItem>
+  <GridItem w='100%' h='10'>Education</GridItem>
+  <GridItem w='100%' h='10'>Contact</GridItem>
+
+</Grid>
           </Box>
         </Flex>
       </Flex>
@@ -81,4 +98,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default MainNavbar;
