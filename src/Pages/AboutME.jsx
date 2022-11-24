@@ -30,7 +30,7 @@ export const AboutME = () => {
   //   });
   // };
   return (
-    <>
+    <div id="about">
       <Box
         fontFamily="sans-serif"
         bg="black"
@@ -114,7 +114,7 @@ export const AboutME = () => {
           </Box>
         </Box>
       </Box>
-    </>
+    </div>
   );
 };
 

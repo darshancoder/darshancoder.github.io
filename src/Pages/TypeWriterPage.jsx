@@ -15,7 +15,7 @@ const TypeWriterPage = () => {
           <Text fontSize="20px" color="white">
             And I'm a
           </Text>
-          <Text ml="10px" fontSize="20px" color="red.400">
+          <Text ml="10px" fontSize="20px" color="red.500">
             <Typewriter
               loop
               cursor
