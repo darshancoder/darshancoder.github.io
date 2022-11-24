@@ -76,6 +76,8 @@ export default function MainNavbar() {
             <HStack
               as={"nav"}
               spacing={4}
+              color="white"
+              fontSize="20px"
               display={{ base: "none", md: "flex" }}
             >
               {Links.map((link) => (
@@ -84,7 +86,7 @@ export default function MainNavbar() {
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
-            <Menu>
+            <Menu  color="white" fontSize="18px">
               <MenuButton
                 as={Button}
                 rounded={"full"}
@@ -108,7 +110,7 @@ export default function MainNavbar() {
 
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
-            <Stack as={"nav"} spacing={4}>
+            <Stack as={"nav"} spacing={4}  color="white" fontSize="20px">
               {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
               ))}
