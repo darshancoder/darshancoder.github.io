@@ -19,6 +19,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import AboutME from "./AboutME";
 import Skills from "./Skills";
 import TypeWriterPage from "./TypeWriterPage";
+import { Projects } from "./Projects";
 
 const Links = ["Home", "About", "Projects", "Skills", "Education", "Contact"];
 
@@ -41,7 +42,7 @@ export default function MainNavbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box bgGradient="linear(to-r, #0f2027, #203a43, #2c5364)">
+    <Box bgGradient="linear(to-r, #0f2027, #203a43, #2c5364)" h="1200px">
       <Box  px={4}>
         <Flex h={16} alignItems={"left"}>
           <IconButton
@@ -125,6 +126,7 @@ export default function MainNavbar() {
         </Box>
         <AboutME />
         <Skills />
+        <Projects/>
       </Box>
     </Box>
   );

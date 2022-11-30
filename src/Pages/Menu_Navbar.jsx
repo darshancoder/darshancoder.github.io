@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <>
     <Box
-      h="400px"
+      h="auto"
       bgGradient="linear(to-r, #0f2027, #203a43, #2c5364)"
       p="10px"
     >
