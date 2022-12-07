@@ -62,10 +62,10 @@ const Skills = () => {
           {/* After Images  */}
 
           <Grid templateColumns="repeat(2, 250px)" gap={6}  >
-              <GridItem boxShadow="dark-lg" rounded="sm" bg="white" h="130px" >
+              <GridItem boxShadow="dark-lg" rounded="sm" bg="white" h="130px" _hover={{ bg: "blue.500" }}>
                 <Flex m={4}>
                 <Image  p={1} w="100px" src="https://codeguida.com/media/post_title/g3033.png" /> 
-                <Text fontFamily="sans-serif" mt={8} pl="5" fontSize="19px" fontWeight="550">JavaScript</Text>
+                <Text fontFamily="sans-serif" mt={8} pl="5" fontSize="19px" fontWeight="550" >JavaScript</Text>
                 </Flex>
               </GridItem>
             <GridItem boxShadow="dark-lg" rounded="sm" bg="white" h="130px" >
