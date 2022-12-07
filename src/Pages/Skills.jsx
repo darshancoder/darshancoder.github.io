@@ -10,6 +10,7 @@ import {
 import React from "react";
 
 const Skills = () => {
+
   return (
     <>
     <Box
@@ -57,16 +58,19 @@ const Skills = () => {
           >
             Read More
           </Button>
+          
         </Box>
         <Box ml="180px">
           {/* After Images  */}
 
           <Grid templateColumns="repeat(2, 250px)" gap={6}  >
-              <GridItem boxShadow="dark-lg" rounded="sm" bg="white" h="130px" _hover={{ bg: "blue.500" }}>
+              <GridItem  rounded="sm" bg="white" h="130px" _hover={{ bg: "blue.500", boxShadow:'dark-lg',color:"white" }} color="black" >
+                <Box>
                 <Flex m={4}>
                 <Image  p={1} w="100px" src="https://codeguida.com/media/post_title/g3033.png" /> 
                 <Text fontFamily="sans-serif" mt={8} pl="5" fontSize="19px" fontWeight="550" >JavaScript</Text>
                 </Flex>
+                </Box>
               </GridItem>
             <GridItem boxShadow="dark-lg" rounded="sm" bg="white" h="130px" >
             <Flex m={4}>

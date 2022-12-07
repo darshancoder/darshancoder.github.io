@@ -34,7 +34,7 @@ const GitCalender = () => {
         color={"white"}
         fontFamily={"Franklin Gothic Medium"}
       >
-        <Box marginBottom={"20px"} borderBottom="3px solid #DD6B20" py="5px">
+        <Box marginBottom={"20px"} borderBottom="3px solid #DD6B20" py="5px" textShadow='1px 1px red'>
           Github Statistics
         </Box>
       </Flex>
