@@ -21,10 +21,12 @@ const Skills = () => {
     >
       <Box
         fontFamily="serif"
-        fontSize="34px"
+        fontWeight={600}
+        fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}
         color="white"
         mt={4}
-
+        justifyContent="center"
+        
         
       >
         Skills

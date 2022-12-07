@@ -20,6 +20,7 @@ import AboutME from "./AboutME";
 import Skills from "./Skills";
 import TypeWriterPage from "./TypeWriterPage";
 import { Projects } from "./Projects";
+import GitCalender from "./GitCalender";
 
 const Links = ["Home", "About", "Projects", "Skills", "Education", "Contact"];
 
@@ -127,6 +128,7 @@ export default function MainNavbar() {
         <AboutME />
         <Skills />
         <Projects/>
+        <GitCalender/>
       </Box>
     </Box>
   );

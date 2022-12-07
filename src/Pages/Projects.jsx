@@ -20,9 +20,11 @@ export const Projects = () => {
         fontFamily="sans-serif"
         bg="black"
         h="auto"
+        fontWeight={600}
+        fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}
         style={{ marginTop: "-20px", paddingBottom: "50px" }}
       >
-        <Box textAlign="center" color="white" fontSize="22px">Projects</Box>
+        <Box textAlign="center" color="white">Projects</Box>
       </Box>
     </div>
   );
