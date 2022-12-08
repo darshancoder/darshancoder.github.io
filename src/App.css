@@ -121,7 +121,7 @@
 
 /* For cards */
 #hover-2 {
-  background-image: linear-gradient(#1095c1 0 0);
+  background-image: linear-gradient(to right , #0f2027, #203a43, #3684a6);
   background-size: 200% .08em; /* .08em is our fixed height, use what you want  */
   background-position: 200% 100%;
   background-repeat: no-repeat;
