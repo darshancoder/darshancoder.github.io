@@ -83,7 +83,7 @@ export const AboutME = () => {
                 wow-user experience through them.
               </Text>
               <Button
-                
+                className="glow-on-hover" 
                 borderRadius="4px"
                 p="5"
                 size="sm"

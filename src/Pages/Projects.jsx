@@ -39,10 +39,10 @@ export const Projects = () => {
         {obj.map((el) => (
           <Grid gap={4} templateColumns="repeat(4,1fr)" 
 >   
-            <GridItem  >
+            <GridItem  color="white" >
               <Box
-              boxShadow="dark-lg" bg="white" color="black"
                 border="1px solid White"
+                id="hover-2"
                 w="300px"
                 justifyContent="center"
                 alignItems="center"

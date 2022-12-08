@@ -21,7 +21,7 @@ const Skills = () => {
       bgGradient="linear(to-r, #0f2027, #203a43, #2c5364)"
     >
       <Box
-        fontFamily="serif"
+        fontFamily="sans-serif"
         fontWeight={600}
         fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}
         color="white"
@@ -47,6 +47,7 @@ const Skills = () => {
             environment.
           </Text>
           <Button
+          className="glow-on-hover" 
             borderRadius="4px"
             p="6"
             mt="8px"
@@ -63,8 +64,8 @@ const Skills = () => {
         <Box ml="180px">
           {/* After Images  */}
 
-          <Grid templateColumns="repeat(2, 250px)" gap={6}  >
-              <GridItem  rounded="sm" bg="white" h="130px" _hover={{ bg: "blue.500", boxShadow:'dark-lg',color:"white" }} color="black" >
+          <Grid templateColumns="repeat(2, 250px)" gap={6} color="black"  >
+              <GridItem id="hover-3"  rounded="sm" bg="white" h="130px" _hover={{ bg: "blue.500", boxShadow:'dark-lg',color:"white" }} color="black" >
                 <Box>
                 <Flex m={4}>
                 <Image  p={1} w="100px" src="https://codeguida.com/media/post_title/g3033.png" /> 
@@ -72,43 +73,43 @@ const Skills = () => {
                 </Flex>
                 </Box>
               </GridItem>
-            <GridItem boxShadow="dark-lg" rounded="sm" bg="white" h="130px" >
+            <GridItem id="hover-3" boxShadow="dark-lg" rounded="sm" bg="white" h="130px" >
             <Flex m={4}>
                 <Image  p={1} w="100px" alt="React" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" /> 
                 <Text fontFamily="sans-serif" mt={8} pl="5" fontSize="19px" fontWeight="550">React</Text>
                 </Flex>
             </GridItem>
-            <GridItem  boxShadow="dark-lg" p="6" rounded="sm" bg="white" h="130px">
+            <GridItem id="hover-3"  boxShadow="dark-lg" p="6" rounded="sm" bg="white" h="130px">
             <Flex m={4}  mt="-10px">
                 <Image   p={1} w="100px" alt="mongoDB" src="https://cdn.cdnlogo.com/logos/m/30/mongodb-icon.svg" /> 
                 <Text fontFamily="sans-serif" mt={8}  fontSize="19px" fontWeight="550">MongoDB</Text>
                 </Flex>
             </GridItem>
-            <GridItem  boxShadow="dark-lg" p="6" rounded="sm" bg="white" h="130px">
+            <GridItem id="hover-3"  boxShadow="dark-lg" p="6" rounded="sm" bg="white" h="130px">
             <Flex m={4}>
                 <Image  p={1} w="100px" alt="nodeJS" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" /> 
                 <Text  fontFamily="sans-serif" mt={4} pl="2" fontSize="19px" fontWeight="550">NodeJS</Text>
                 </Flex>
             </GridItem>
-            <GridItem  boxShadow="dark-lg" p="6" rounded="sm" bg="white" h="130px">
+            <GridItem id="hover-3" boxShadow="dark-lg" p="6" rounded="sm" bg="white" h="130px">
             <Flex m={4}>
                 <Image ml={"-15px"} p={1} w="140px" alt="nodeJS" src="https://cdn.buttercms.com/2q5r816LTo2uE9j7Ntic" /> 
                 <Text  fontFamily="sans-serif" mt={4}  fontSize="19px" fontWeight="550">NodeJS</Text>
                 </Flex>
             </GridItem>
-            <GridItem boxShadow="dark-lg" p="6" rounded="sm" bg="white" h="130px">
+            <GridItem id="hover-3" boxShadow="dark-lg" p="6" rounded="sm" bg="white" h="130px">
             <Flex m={4}>
                 <Image mt="-5px" w="80px" alt="nodeJS" src="https://cdn.worldvectorlogo.com/logos/redux.svg" /> 
                 <Text  fontFamily="sans-serif" mt={4} pl="5" fontSize="19px" fontWeight="550">Redux</Text>
                 </Flex>
             </GridItem>
-            <GridItem  boxShadow="dark-lg" p="6" rounded="sm" bg="white" h="130px">
+            <GridItem id="hover-3"  boxShadow="dark-lg" p="6" rounded="sm" bg="white" h="130px">
             <Flex m={4}>
                 <Image mt="-20px" w="100px" alt="nodeJS" src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" /> 
                 <Text  fontFamily="sans-serif" mt={4} pl="4" fontSize="19px" fontWeight="550">HTML</Text>
                 </Flex>
             </GridItem>
-            <GridItem  boxShadow="dark-lg" p="6" rounded="sm" bg="white" h="130px">
+            <GridItem id="hover-3" boxShadow="dark-lg" p="6" rounded="sm" bg="white" h="130px">
             <Flex m={4}>
                 <Image mt="-15px" w="80px" alt="nodeJS" src="https://w7.pngwing.com/pngs/509/571/png-transparent-cascading-style-sheets-logo-css3-html-web-development-world-wide-web-blue-angle-web-design.png" /> 
                 <Text  fontFamily="sans-serif" mt={4} pl="5" fontSize="19px" fontWeight="550">CSS</Text>
