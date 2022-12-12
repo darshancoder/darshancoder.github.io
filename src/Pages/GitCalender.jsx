@@ -41,7 +41,7 @@ const GitCalender = () => {
       </Flex>
       <Grid templateColumns="repeat(2, 1fr)" w="70%" m="auto" gap={2}>
         <GridItem colSpan={2}>
-          <Flex justifyContent={"center"}>
+          <Flex justifyContent={"center"} style={{color:"white"}}>
             <GitHubCalendar username="darshancoder" transformData={calender} />
           </Flex>
         </GridItem>
@@ -56,7 +56,6 @@ const GitCalender = () => {
         <GridItem colSpan={["2", "2", "1", "1"]}>
           <img
             height="200px"
-            // width={"49%"}
             src="https://github-readme-streak-stats.herokuapp.com/?user=darshancoder&theme=swift"
             alt="Darshan Star"
           />
