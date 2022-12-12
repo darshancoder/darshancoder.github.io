@@ -22,6 +22,7 @@ const GitCalender = () => {
     <Box
       style={{ marginTop: "-10px" }}
       pb="50px"
+      
       fontFamily="sans-serif"
       bgGradient="linear(to-r, #0f2027, #203a43, #2c5364)"
     >
@@ -31,10 +32,10 @@ const GitCalender = () => {
         justify={"center"}
         pt={"50px"}
         fontWeight={600}
-        color={"white"}
+        color="white"
         fontFamily={"Franklin Gothic Medium"}
       >
-        <Box color={"white"} marginBottom={"20px"} borderBottom="3px solid #DD6B20" py="5px" textShadow='1px 1px red'>
+        <Box  style={{color:"white"}} marginBottom={"20px"} borderBottom="3px solid #DD6B20" py="5px" textShadow='1px 1px red'>
           Github Statistics
         </Box>
       </Flex>
@@ -47,7 +48,6 @@ const GitCalender = () => {
         <GridItem colSpan={["2", "2", "1", "1"]}>
           <img
             height="200px"
-            // width={"49%"}
             color="black"
             src="https://github-readme-stats.vercel.app/api?username=darshancoder&show_icons=true&theme=swift"
             alt="Darsh Star"

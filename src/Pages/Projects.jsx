@@ -8,6 +8,8 @@ import {
   Grid,
   GridItem,
 } from "@chakra-ui/react";
+import {BsCodeSlash} from "react-icons/bs"
+import {GrView} from "react-icons/gr"
 import imgFiver from "../Download/fiver.png";
 export const Projects = () => {
   const obj = [
@@ -62,18 +64,20 @@ export const Projects = () => {
                 </Flex>
                 <Flex
                   m="auto"
-                  justifyContent="center"
+                  justifyContent="space-evenly"
                   alignItems="center"
                   gap={5}
                   mt="15px"
                   mb="10px"
+                  justify="space-evenly"
+                  
                 >
-                  <Button bg="whatsapp.700">Github Link</Button>
-                  <Button bg="tomato">Demo Link</Button>
+                  <Button bg="whatsapp.700" fontSize={{base:"2xl",md:"3xl",lg:"4xl"}}><BsCodeSlash/></Button>
+                  <Button bg="tomato" fontSize={{base:"2xl",md:"3xl",lg:"4xl"}}><GrView/></Button>
                 </Flex>
               </Box>
             </GridItem>
-            <GridItem>
+            <GridItem color="white">
               <Box
                 border="1px solid White"
                 w="300px"
@@ -107,7 +111,7 @@ export const Projects = () => {
                 </Flex>
               </Box>
             </GridItem>
-            <GridItem>
+            <GridItem color="white">
               <Box
                 id="hover-2"
                 border="1px solid White"
@@ -141,7 +145,7 @@ export const Projects = () => {
                 </Flex>
               </Box>
             </GridItem>
-            <GridItem>
+            <GridItem color="white">
               <Box
                 id="hover-2"
                 border="1px solid White"

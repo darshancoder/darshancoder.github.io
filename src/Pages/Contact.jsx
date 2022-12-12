@@ -8,7 +8,7 @@ const Contact = () => {
     h="auto"
     fontWeight={600}
     style={{ marginTop: "-20px", paddingBottom: "50px" }}>
-    <Box fontSize={{base:"2xl",md:"3xl",lg:"4xl"}} textShadow="1px 1.5px red" >
+    <Box color="white" fontSize={{base:"2xl",md:"3xl",lg:"4xl"}} textShadow="1px 1.5px red" >
         Contact
     </Box>
       
