@@ -13,7 +13,8 @@ import {
   MenuDivider,
   useDisclosure,
   Stack,
-  Text,} from "@chakra-ui/react";
+  Text,
+} from "@chakra-ui/react";
 
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import AboutME from "./AboutME";
@@ -33,7 +34,6 @@ const NavLink = ({ children }: { children: ReactNode }) => (
     _hover={{
       textDecoration: "none",
     }}
-    
     href={"#"}
   >
     {children}
@@ -45,12 +45,20 @@ export default function MainNavbar() {
 
   return (
     <Box bgGradient="linear(to-r, #0f2027, #203a43, #2c5364)" h="1200px">
-      <Box  px={4}>
+      <Box
+        bg={"black"}
+        px={4}
+        position="fixed"
+        width="full"
+        flexDirection={"row"}
+        display={"flex"}
+        justifyContent="space-between"
+      >
         <Flex h={16} alignItems={"left"}>
           <IconButton
             size={"md"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-            aria-label={"Open Menu"} 
+            aria-label={"Open Menu"}
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
           />
@@ -61,7 +69,7 @@ export default function MainNavbar() {
           >
             <Box>
               {" "}
-              <Flex justifyContent="left">
+              <Flex justifyContent="space-bewteen">
                 <Box ml="100px">
                   <Text
                     fontFamily="BesterMindRegular"
@@ -69,7 +77,7 @@ export default function MainNavbar() {
                     textAlign="left"
                     color="white"
                     ml="5px"
-                    fontSize="35px"
+                    fontSize={{ base: "26px", sm:"26px", md: "28px",  lg: "36px" }}
                   >
                     Darshan <span style={{ color: "red" }}>Kale</span>
                   </Text>
@@ -78,18 +86,21 @@ export default function MainNavbar() {
             </Box>
             <HStack
               as={"nav"}
+              ml="50%"
               spacing={4}
               color="white"
               fontSize="20px"
               display={{ base: "none", md: "flex" }}
             >
               {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <NavLink textAlign="end" key={link}>
+                  {link}
+                </NavLink>
               ))}
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
-            <Menu  color="white" fontSize="18px">
+            <Menu color="white" fontSize="18px">
               <MenuButton
                 as={Button}
                 rounded={"full"}
@@ -113,7 +124,7 @@ export default function MainNavbar() {
 
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
-            <Stack as={"nav"} spacing={4}  color="white" fontSize="20px">
+            <Stack as={"nav"} spacing={4} color="white" fontSize="20px">
               {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
               ))}
@@ -122,15 +133,15 @@ export default function MainNavbar() {
         ) : null}
       </Box>
 
-      <Box >
+      <Box>
         <Box p={4}>
           <TypeWriterPage />
         </Box>
         <AboutME />
-        <Skills />
+        {/*<Skills />
         <Projects/>
         <GitCalender/>
-        <Contact/>
+        <Contact/> */}
       </Box>
     </Box>
   );

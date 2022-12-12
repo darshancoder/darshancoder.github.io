@@ -30,7 +30,7 @@ export const Projects = () => {
         fontWeight={600}
         style={{ marginTop: "-20px", paddingBottom: "50px" }}
       >
-        <Box
+        {/* <Box
           textAlign="center"
           color="white"
           fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}
@@ -180,7 +180,7 @@ export const Projects = () => {
               </Box>
             </GridItem>
           </Grid>
-        ))}
+        ))} */}
       </Box>
     </div>
   );
