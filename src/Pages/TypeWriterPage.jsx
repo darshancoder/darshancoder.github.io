@@ -5,17 +5,17 @@ import { Box, Text, Stack, Spacer, Flex } from "@chakra-ui/react";
 
 const TypeWriterPage = () => {
   return (
-    <Stack fontSize="20px" fontFamily="sans-serif">
+    <Stack fontFamily="sans-serif" mt="50px" id="home">
       <Box m="30px" mt="100px" ml="100px" textAlign="left">
-        <Text color="white">Hello, my name is</Text>{" "}
-        <Text mt="-5px" color="white" fontSize="40px">
+        <Text color="white" fontSize={{base:"18px",md:"22px",lg:"24px"}}>Hello, my name is</Text>{" "}
+        <Text mt="-5px" color="white" fontSize={{base:"2xl",sm:"3xl",md:"4xl",lg:"5xl"}}>
           Darshan
         </Text>
         <Flex>
-          <Text fontSize="20px" color="white">
+          <Text fontSize={{base:"18px",md:"22px",lg:"24px"}}color="white">
             And I'm a
           </Text>
-          <Text ml="10px" fontSize="20px" color="red.500">
+          <Text ml="10px" fontSize={{base:"18px",md:"22px",lg:"24px"}} color="red.500">
             <Typewriter
               loop
               cursor

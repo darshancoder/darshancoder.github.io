@@ -33,7 +33,7 @@ const NavLink = ({ children }: { children: ReactNode }) => (
     rounded={"md"}
     _hover={{
       textDecoration: "none",
-    }}
+    }}  
     href={"#"}
   >
     {children}
@@ -50,11 +50,8 @@ export default function MainNavbar() {
         px={4}
         position="fixed"
         width="full"
-        flexDirection={"row"}
-        display={"flex"}
-        justifyContent="space-between"
       >
-        <Flex h={16} alignItems={"left"}>
+        <Flex h={16}>
           <IconButton
             size={"md"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -65,11 +62,11 @@ export default function MainNavbar() {
           <HStack
             spacing={8}
             alignItems={"center"}
-            justifyContent={"space-between"}
+            // justifyContent={"space-between"}
           >
             <Box>
               {" "}
-              <Flex justifyContent="space-bewteen">
+              <Flex >
                 <Box ml="100px">
                   <Text
                     fontFamily="BesterMindRegular"
@@ -77,7 +74,12 @@ export default function MainNavbar() {
                     textAlign="left"
                     color="white"
                     ml="5px"
-                    fontSize={{ base: "26px", sm:"26px", md: "28px",  lg: "36px" }}
+                    fontSize={{
+                      base: "26px",
+                      sm: "26px",
+                      md: "28px",
+                      lg: "36px",
+                    }}
                   >
                     Darshan <span style={{ color: "red" }}>Kale</span>
                   </Text>
@@ -97,6 +99,64 @@ export default function MainNavbar() {
                   {link}
                 </NavLink>
               ))}
+              {/* <NavLink> */}
+              {/* <Link
+                href="#"
+                px={2}
+                py={1}
+                rounded={"md"}
+                _hover={{
+                  bg: "red",
+                }}
+              >
+                Home
+              </Link>
+              <Link
+                href="#about"
+                px={2}
+                py={1}
+                rounded={"md"}
+                _hover={{
+                  bg: "red",
+                }}
+              >
+                About
+              </Link>
+              <Link
+                href="#about"
+                px={2}
+                py={1}
+                rounded={"md"}
+                _hover={{
+                  bg: "red",
+                }}
+              >
+                About
+              </Link>
+              <Link
+                href="#about"
+                px={2}
+                py={1}
+                rounded={"md"}
+                _hover={{
+                  bg: "red",
+                }}
+              >
+                About
+              </Link>
+              <Link
+                href="#about"
+                px={2}
+                py={1}
+                rounded={"md"}
+                _hover={{
+                  bg: "red",
+                }}
+              >
+                About
+              </Link> */}
+
+              {/* </NavLink> */}
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
@@ -138,8 +198,8 @@ export default function MainNavbar() {
           <TypeWriterPage />
         </Box>
         <AboutME />
-        {/*<Skills />
-        <Projects/>
+        <Skills />
+        {/*<Projects/>
         <GitCalender/>
         <Contact/> */}
       </Box>

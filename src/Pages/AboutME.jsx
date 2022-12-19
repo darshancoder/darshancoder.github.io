@@ -20,13 +20,13 @@ export const AboutME = () => {
         fontFamily="sans-serif"
         bg="black"
         h="auto"
-        style={{ marginTop: "-20px", paddingBottom: "50px" }}
+        style={{ marginTop: "10%", paddingBottom: "100px",paddingTop:"30px" }}
       >
         <Box>
           <Text
             color="white"
             fontWeight={600}
-            fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}
+            fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
             mt="15px"
             mb="15px"
             textAlign="center"
@@ -37,7 +37,6 @@ export const AboutME = () => {
 
         <Flex
           flexDirection={["column", "column", "column", "row"]}
-          border="1px solid red"
           display="flex"
           m="20px"
           alignItems={"center"}
@@ -59,10 +58,10 @@ export const AboutME = () => {
             w="50%"
           >
             <Flex>
-              <Text fontSize="20px" color="white" mb="10px">
+              <Text fontSize={{ base: "18", md: "20", lg: "22px" }} color="white" mb="10px">
                 I'm Darshan Kale and I'm a
               </Text>
-              <Text color="red.500" fontSize="20px" ml={"10px"}>
+              <Text color="red.500" fontSize={{ base: "18", md: "20", lg: "22px" }} ml={"10px"}>
                 <Typewriter
                   loop
                   cursor
@@ -86,7 +85,7 @@ export const AboutME = () => {
               <Text
                 color="white"
                 fontFamily="sans-serif"
-                fontSize={{ base: "12px", sm: "14px", md: "16px", lg: "18px" }}
+                fontSize={{ base: "18", md: "20", lg: "20px" }}
               >
                 A passionate Developer proficient in Web architecture,
                 HTML,CSS,JavaScript,React-JS,Chakra-UI,Redux,
@@ -101,17 +100,18 @@ export const AboutME = () => {
         </Flex>
        <Box w={[400, "95%", "80%"]}>
        <Button
+       id="downloadbtn"
           className="glow-on-hover"
           borderRadius="4px"
           p="5"
           size="sm"
           w="150px"
-          fontSize="15x"
+          fontSize={{ base: "14px", md: "16px", lg: "18px" }}
           colorScheme="blue"
-          bg="red"
+          bg="red.500"
           color="white"
         >
-          <a href={cv} download="Darshan_Resume">
+          <a href={cv} download="Darshan_Resume" >
             Download CV
           </a>
         </Button>

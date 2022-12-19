@@ -21,20 +21,29 @@ const Skills = () => {
         <Box
           fontFamily="sans-serif"
           fontWeight={600}
-          fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}
+          fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
           color="white"
-          mt={4}
+          p={8}
           justifyContent="center"
         >
           Skills
         </Box>
-        <Flex gap={40}>
-          <Box ml="70px" width="450px" textAlign="left">
+        {/*  */}
+        <Flex gap={40} flexDirection={["column", "column", "column", "row"]} >
+          <Box ml="70px" w={[300, 400, 500]} textAlign="left">
             {/*Text */}
-            <Text color="whitesmoke" fontWeight="bold" fontSize="26px">
+            <Text
+              color="whitesmoke"
+              fontWeight="bold"
+              fontSize={{ base: "20px", md: "24px", lg: "32px" }}
+            >
               My creative skills & experiences.
             </Text>
-            <Text fontSize="19px" color="white" fontFamily="serif">
+            <Text
+              fontSize={{ base: "14px", md: "16px", lg: "18px" }}
+              color="white"
+              fontFamily="sans-serif"
+            >
               I am Full-stack developer with a specialization in HTML,CSS,REST
               APIs, Git/Github,JavaScript,React,Redux,TypeScript,MongoDB,NodeJS.
               Self-motivated and curious to learn, with a keen interest in
@@ -48,15 +57,16 @@ const Skills = () => {
               p="6"
               mt="8px"
               size="sm"
-              fontSize="20px"
+              fontSize={{ base: "14px", md: "16px", lg: "18px" }}
               colorScheme="green"
               bg="red"
               color="white"
             >
-              Read More
+            {/* <a href="#about">Read More<a/> */}
+            <a href="#about">Read More</a>
             </Button>
           </Box>
-          <Box ml="180px">
+          <Box >
             {/* After Images  */}
 
             <Grid templateColumns="repeat(2, 250px)" gap={6} color="black">
