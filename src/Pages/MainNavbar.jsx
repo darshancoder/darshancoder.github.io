@@ -199,8 +199,8 @@ export default function MainNavbar() {
         </Box>
         <AboutME />
         <Skills />
-        {/*<Projects/>
-        <GitCalender/>
+       <Projects/>
+         {/*<GitCalender/>
         <Contact/> */}
       </Box>
     </Box>

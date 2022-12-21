@@ -81,11 +81,11 @@ export const AboutME = () => {
             </Flex>
             <Spacer />
 
-            <Box>
+            <Box w={[400, "90%", "95%"]}>
               <Text
                 color="white"
                 fontFamily="sans-serif"
-                fontSize={{ base: "18", md: "20", lg: "20px" }}
+                fontSize={{ base: "18", md: "20", lg: "18px" }}
               >
                 A passionate Developer proficient in Web architecture,
                 HTML,CSS,JavaScript,React-JS,Chakra-UI,Redux,

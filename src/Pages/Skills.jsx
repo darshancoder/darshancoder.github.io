@@ -69,7 +69,7 @@ const Skills = () => {
           <Box >
             {/* After Images  */}
 
-            <Grid templateColumns="repeat(2, 250px)" gap={6} color="black">
+            <Grid templateColumns="repeat(2, 250px)" column={{base:1, md:2, lg:2}} gap={6} color="black">
               <GridItem
                 id="hover-3"
                 rounded="sm"
