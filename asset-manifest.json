@@ -1,18 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.ace09200.css",
-    "main.js": "/static/js/main.c497a656.js",
+    "main.js": "/static/js/main.1a7e118a.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/Gym.png": "/static/media/Gym.727917123146e6116ce4.png",
+    "static/media/Jiomart.png": "/static/media/Jiomart.92c3ce66e0f9e24cf3e5.png",
     "static/media/fiver.png": "/static/media/fiver.e38b241980386ffec6d6.png",
+    "static/media/banggood.png": "/static/media/banggood.e197f98b4269b21fda99.png",
+    "static/media/Autoshop.png": "/static/media/Autoshop.4205b822901708d81ed2.png",
+    "static/media/Bellveta.png": "/static/media/Bellveta.65099aa60bc569398581.png",
     "static/media/Resume1.pdf": "/static/media/Resume1.09e03cf8a3706abbeb8c.pdf",
     "static/media/Profile7.png": "/static/media/Profile7.21fc78a778c93fa79b73.png",
     "index.html": "/index.html",
     "main.ace09200.css.map": "/static/css/main.ace09200.css.map",
-    "main.c497a656.js.map": "/static/js/main.c497a656.js.map",
+    "main.1a7e118a.js.map": "/static/js/main.1a7e118a.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ace09200.css",
-    "static/js/main.c497a656.js"
+    "static/js/main.1a7e118a.js"
   ]
 }
