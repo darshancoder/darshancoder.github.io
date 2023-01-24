@@ -2,22 +2,22 @@ import { Box,Flex, GridItem, Grid } from "@chakra-ui/react";
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 const GitCalender = () => {
-    const calender = (contributions) => {
-        const currentYear = new Date().getFullYear();
-        const currentMonth = new Date().getMonth();
-        const shownMonths = 12;
+    // const calender = (contributions) => {
+    //     const currentYear = new Date().getFullYear();
+    //     const currentMonth = new Date().getMonth();
+    //     const shownMonths = 12;
     
-        return contributions.filter((day) => {
-          const date = new Date(day.date);
-          const monthOfDay = date.getMonth();
+    //     return contributions.filter((day) => {
+    //       const date = new Date(day.date);
+    //       const monthOfDay = date.getMonth();
     
-          return (
-            date.getFullYear() === currentYear &&
-            monthOfDay > currentMonth - shownMonths &&
-            monthOfDay <= currentMonth
-          );
-        });
-      };
+    //       return (
+    //         date.getFullYear() === currentYear &&
+    //         monthOfDay > currentMonth - shownMonths &&
+    //         monthOfDay <= currentMonth
+    //       );
+    //     });
+    //   };
   return (
     <Box
       style={{ marginTop: "-10px" }}
@@ -42,7 +42,7 @@ const GitCalender = () => {
       <Grid templateColumns="repeat(2, 1fr)" w="70%" m="auto" gap={2}>
         <GridItem colSpan={2}>
           <Flex justifyContent={"center"} style={{color:"white"}}>
-            <GitHubCalendar username="darshancoder" transformData={calender} />
+            <GitHubCalendar blockSize={20} username="darshancoder" />
           </Flex>
         </GridItem>
         <GridItem colSpan={["2", "2", "1", "1"]}>
