@@ -29,6 +29,7 @@ export const AboutME = () => {
             fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
             mt="15px"
             mb="15px"
+            
             textAlign="center"
           >
             About me
@@ -81,7 +82,7 @@ export const AboutME = () => {
             </Flex>
             <Spacer />
 
-            <Box w={[400, "90%", "95%"]}>
+            <Box w={["90%", "90%", "90%"]}>
               <Text
                 color="white"
                 fontFamily="sans-serif"
@@ -111,7 +112,7 @@ export const AboutME = () => {
           bg="red.500"
           color="white"
         >
-          <a href={cv} download="Darshan_Resume" >
+          <a href={cv} id="resume" download="Darshan_Resume" >
             Download CV
           </a>
         </Button>

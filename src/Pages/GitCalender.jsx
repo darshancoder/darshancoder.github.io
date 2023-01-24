@@ -26,7 +26,7 @@ const GitCalender = () => {
       fontFamily="sans-serif"
       bgGradient="linear(to-r, #0f2027, #203a43, #2c5364)"
     >
-    {/* <Flex
+    <Flex
         marginBottom={"20px"}
         fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
         justify={"center"}
@@ -60,7 +60,7 @@ const GitCalender = () => {
             alt="Darshan Star"
           />
         </GridItem>
-      </Grid> */}
+      </Grid>
     </Box>
   );
 };

@@ -1,9 +1,7 @@
-import { ReactNode } from "react";
 import {
   Box,
   Flex,
   HStack,
-  Link,
   IconButton,
   Button,
   Menu,
@@ -15,7 +13,8 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-
+import { Link } from "react-scroll";
+import Resume from "../Download/Resume1.pdf";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import AboutME from "./AboutME";
 import Skills from "./Skills";
@@ -24,33 +23,17 @@ import { Projects } from "./Projects";
 import GitCalender from "./GitCalender";
 import Contact from "./Contact";
 
-const Links = ["Home", "About", "Projects", "Skills", "Education", "Contact"];
+// const handleClick = () => {
 
-const NavLink = ({ children }: { children: ReactNode }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={"md"}
-    _hover={{
-      textDecoration: "none",
-    }}  
-    href={"#"}
-  >
-    {children}
-  </Link>
-);
+// }
 
 export default function MainNavbar() {
+  const cv = Resume;
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <Box bgGradient="linear(to-r, #0f2027, #203a43, #2c5364)" h="1200px">
-      <Box
-        bg={"black"}
-        px={4}
-        position="fixed"
-        width="full"
-      >
+      <Box bg={"black"} px={4} position="fixed" width="full">
         <Flex h={16}>
           <IconButton
             size={"md"}
@@ -62,11 +45,10 @@ export default function MainNavbar() {
           <HStack
             spacing={8}
             alignItems={"center"}
-            // justifyContent={"space-between"}
           >
             <Box>
               {" "}
-              <Flex >
+              <Flex>
                 <Box ml="100px">
                   <Text
                     fontFamily="BesterMindRegular"
@@ -89,74 +71,20 @@ export default function MainNavbar() {
             <HStack
               as={"nav"}
               ml="50%"
-              spacing={4}
+              spacing={8}
               color="white"
-              fontSize="20px"
+              fontSize={{base:"16px",md:"18px",lg:"20px"}}
+              
               display={{ base: "none", md: "flex" }}
             >
-              {Links.map((link) => (
-                <NavLink textAlign="end" key={link}>
-                  {link}
-                </NavLink>
-              ))}
-              {/* <NavLink> */}
-              {/* <Link
-                href="#"
-                px={2}
-                py={1}
-                rounded={"md"}
-                _hover={{
-                  bg: "red",
-                }}
-              >
-                Home
-              </Link>
-              <Link
-                href="#about"
-                px={2}
-                py={1}
-                rounded={"md"}
-                _hover={{
-                  bg: "red",
-                }}
-              >
-                About
-              </Link>
-              <Link
-                href="#about"
-                px={2}
-                py={1}
-                rounded={"md"}
-                _hover={{
-                  bg: "red",
-                }}
-              >
-                About
-              </Link>
-              <Link
-                href="#about"
-                px={2}
-                py={1}
-                rounded={"md"}
-                _hover={{
-                  bg: "red",
-                }}
-              >
-                About
-              </Link>
-              <Link
-                href="#about"
-                px={2}
-                py={1}
-                rounded={"md"}
-                _hover={{
-                  bg: "red",
-                }}
-              >
-                About
-              </Link> */}
-
-              {/* </NavLink> */}
+              <Link duration={700} smooth={true} to="home">Home</Link>
+              <Link duration={700} smooth={true} to="about">About</Link>
+              <Link duration={700} smooth={true} to="skill">Skills</Link>
+              <Link duration={700} smooth={true} to="project">Projects</Link>
+              <Link duration={700} smooth={true} to="contact">Contact</Link>
+              <a href={cv} id="resume" download="Darshan_Resume" >
+            Resume
+          </a>
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
@@ -177,6 +105,7 @@ export default function MainNavbar() {
                 <MenuItem>Skills</MenuItem>
                 <MenuItem>Education</MenuItem>
                 <MenuItem>Contact</MenuItem>
+                <MenuItem>Resume</MenuItem>
               </MenuList>
             </Menu>
           </Flex>
@@ -185,9 +114,14 @@ export default function MainNavbar() {
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4} color="white" fontSize="20px">
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
+            <Link to="home">Home</Link>
+              <Link to="about">About</Link>
+              <Link to="skill">Skills</Link>
+              <Link to="projects">Projects</Link>
+              <Link to="contact">Contact</Link>
+              <a href={cv} id="resume" download="Darshan_Resume" >
+            Resume
+          </a>
             </Stack>
           </Box>
         ) : null}
@@ -199,9 +133,9 @@ export default function MainNavbar() {
         </Box>
         <AboutME />
         <Skills />
-       <Projects/>
-         {/*<GitCalender/>
-        <Contact/> */}
+        <Projects />
+        <GitCalender/>
+        <Contact/>
       </Box>
     </Box>
   );
