@@ -112,7 +112,7 @@ export const AboutME = () => {
           bg="red.500"
           color="white"
         >
-          <a href={cv} id="resume" download="Darshan_Resume" >
+          <a href={cv} id="resume" download="Darshan_Kale_Resume" >
             Download CV
           </a>
         </Button>

@@ -77,14 +77,14 @@ export default function MainNavbar() {
               
               display={{ base: "none", md: "flex" }}
             >
-              <Link duration={700} smooth={true} to="home">Home</Link>
-              <Link duration={700} smooth={true} to="about">About</Link>
-              <Link duration={700} smooth={true} to="skill">Skills</Link>
-              <Link duration={700} smooth={true} to="project">Projects</Link>
-              <Link duration={700} smooth={true} to="contact">Contact</Link>
-              <a href={cv} id="resume" download="Darshan_Resume" >
-            Resume
-          </a>
+              <Link duration={700} smooth={true} to="home" className="l1" >Home</Link>
+              <Link duration={700} smooth={true} to="about" className="l1"  >About</Link>
+              <Link duration={700} smooth={true} to="skill"  className="l1" >Skills</Link>
+              <Link duration={700} smooth={true} to="project" className="l1" >Projects</Link>
+              <Link duration={700} smooth={true} to="contact" className="l1" >Contact</Link>
+              {/* <a href={cv} id="resume" download="Darshan_Resume" > */}
+            <a target="_blank" href="https://drive.google.com/file/d/1duEVSY_JHaCnWp_YMBwIxjKpe7IiLp4R/view?usp=share_link">Resume</a>
+          {/* </a> */}
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
