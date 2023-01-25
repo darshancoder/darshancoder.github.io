@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d170964a.css",
-    "main.js": "/static/js/main.a440033e.js",
+    "main.js": "/static/js/main.9aa02bc5.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Gym.png": "/static/media/Gym.727917123146e6116ce4.png",
     "static/media/Jiomart.png": "/static/media/Jiomart.92c3ce66e0f9e24cf3e5.png",
@@ -13,11 +13,11 @@
     "static/media/Profile7.png": "/static/media/Profile7.21fc78a778c93fa79b73.png",
     "index.html": "/index.html",
     "main.d170964a.css.map": "/static/css/main.d170964a.css.map",
-    "main.a440033e.js.map": "/static/js/main.a440033e.js.map",
+    "main.9aa02bc5.js.map": "/static/js/main.9aa02bc5.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d170964a.css",
-    "static/js/main.a440033e.js"
+    "static/js/main.9aa02bc5.js"
   ]
 }
