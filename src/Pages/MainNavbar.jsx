@@ -23,13 +23,16 @@ import { Projects } from "./Projects";
 import GitCalender from "./GitCalender";
 import Contact from "./Contact";
 
-// const handleClick = () => {
 
-// }
 
 export default function MainNavbar() {
   const cv = Resume;
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const handleClick = () => {
+    window.open(cv, "_blank");
+}
+
 
   return (
     <Box bgGradient="linear(to-r, #0f2027, #203a43, #2c5364)" h="1200px">
@@ -83,7 +86,8 @@ export default function MainNavbar() {
               <Link duration={700} smooth={true} to="project" className="l1" >Projects</Link>
               <Link duration={700} smooth={true} to="contact" className="l1" >Contact</Link>
               {/* <a href={cv} id="resume" download="Darshan_Resume" > */}
-            <a target="_blank" href="https://drive.google.com/file/d/1duEVSY_JHaCnWp_YMBwIxjKpe7IiLp4R/view?usp=share_link">Resume</a>
+            <a href={cv} target="_blank" download="Darshan_Kale_Resume" onClick={handleClick}>Resume</a>
+            {/* <a href>Resume</a> */}
           {/* </a> */}
             </HStack>
           </HStack>

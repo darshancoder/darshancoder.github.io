@@ -113,13 +113,12 @@ const ProjectArr = [
 export const Projects = () => {
   return (
     <div id="project">
-      <br />
       <Box
         fontFamily="sans-serif"
         bg="black"
         h="auto"
         fontWeight={600}
-        style={{ marginTop: "-20px", paddingBottom: "50px" }}
+        style={{ marginTop: "-25px", paddingBottom: "50px" }}
       >
         <Box
           textAlign="center"
